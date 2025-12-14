@@ -20,6 +20,7 @@ st.markdown("<h1 style='text-align: center;'>🎓 Student Performance Prediction
 st.markdown("<p style='text-align: center;'>Enter student details to predict final performance</p>", unsafe_allow_html=True)
 st.divider()
 
+
 # Input form
 with st.form("prediction_form"):
     col1, col2 = st.columns(2)
@@ -64,4 +65,6 @@ if submit:
 
 # Footer
 st.divider()
+
 st.markdown("<p style='text-align: center; font-size: 12px;'>Developed by Shruti Waghmare | B.Sc Data Science</p>", unsafe_allow_html=True)
+# redeploy trigger
