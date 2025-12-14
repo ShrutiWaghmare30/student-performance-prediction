@@ -11,7 +11,8 @@ st.set_page_config(
 
 # Load trained model
 with open("student_performance_model.pkl", "rb") as file:
-    model, scaler = pickle.load(file)
+   model = pickle.load(file)
+
 
 
 # Title & description
@@ -48,7 +49,6 @@ if submit:
     float(sleep_hours)
 ]], dtype=float)
 
-    input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)[0]
 
 
